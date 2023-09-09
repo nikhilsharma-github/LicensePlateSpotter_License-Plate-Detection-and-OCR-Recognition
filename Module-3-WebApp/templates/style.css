@@ -1,0 +1,203 @@
+{% comment %} .headingcss {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 3rem;
+  padding: 0.5rem;
+  letter-spacing: 0px;
+  word-spacing: 6px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline solid rgb(255, 0, 0);
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: none;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.headingcss:hover {
+  color: rgb(92, 0, 0);
+  background-color: rgb(255, 200, 200);
+  border-radius: 1rem;
+  animation: myAnim 1s ease-out 0s infinite alternate both;
+}
+
+.lineheadingcss {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  /* letter-spacing: 1px; */
+  /* word-spacing: 1px; */
+  color: #ffffff;
+  font-weight: 400;
+  text-shadow: 3px 5px 5px rgba(253, 131, 131, 0.56);
+}
+
+/* UPLOAD BOX CSS  */
+.uploadbox {
+  /* height: 26rem; */
+  /* background-color:rgb(211, 211, 211); */
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(203, 203, 203);
+  width: 90%;
+
+
+}
+
+.fileuploadbtn {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.filesubmitbtn {
+  font-weight: bolder;
+  color: rgb(159, 0, 0);
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 2px 4px rgba(60, 0, 0, 0.56);
+}
+
+@media only screen and (max-width: 600px) {
+  .filesubmitbtn,.fileuploadbtn{
+  /* height: 26rem; */
+  /* background-color:rgb(211, 211, 211); */
+  font-size: 0.5rem;
+
+}
+}
+
+
+/* Image Container CSS  */
+
+
+.rowclass {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  /* padding: 0 4px; */
+}
+
+.rowclass img {
+  width: 100px;
+  margin: auto;
+  display: block;
+  padding: 1rem;
+  border: 1px solid red;
+  border-radius: 1rem;
+  width: 30rem;
+  height: 24rem;
+  /* width:80%;
+  height:80%; */
+}
+
+#licenseplate {
+  height: 10rem;
+}
+
+.rowclass h2 {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
+
+/* Create four equal columns that sits next to each other */
+.colclass {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  /* padding: 0 4px; */
+}
+
+@media screen and (max-width: 1200px) {
+  .colclass {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .rowclass img {
+    width: 18rem;
+    height: 12rem;
+    /* width:80%;
+  height:80%; */
+  }
+
+  .rowclass h2 {
+    font-size: 1rem;
+  }
+
+
+  #licenseplate {
+    width: 12rem;
+    height: 5rem;
+  }
+}
+
+
+
+/* FOOTER STYLING  */
+footer {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 1px;
+  margin-top: 3rem;
+  text-align: center;
+  word-wrap: break-word;
+  justify-content: center;
+  font-family: 'Impact', sans-serif;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-style: italic;
+  border-radius: 0.5rem;
+  color: #720000;
+  background: rgb(179, 179, 179);
+}
+
+footer p {
+  color: #ffffff;
+  background-color: black;
+  font-family: 'Verdana', sans-serif;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 600px) {
+
+  footer p {
+    font-size: 0.5rem;
+  }
+
+  .headingcss {
+    font-size: 2.5rem;
+  }
+
+  .lineheadingcss {
+    font-size: 1rem;
+  }
+} {% endcomment %}

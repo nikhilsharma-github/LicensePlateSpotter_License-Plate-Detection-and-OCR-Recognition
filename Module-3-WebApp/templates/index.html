@@ -1,0 +1,50 @@
+<!-- this index.js file is being under inheritence from the file layout.html.
+
+The file upload and the result showcase has been covered under this file, and this file is connected with layout.html.
+
+the syntax here followed is djangoHTML. -->
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container uploadbox">
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="input-group">
+            <input type="file" class="form-control fileuploadbtn" name="image-name" required>
+            <input type="submit" value="Upload" class="btn btn-outline-danger filesubmitbtn">
+        </div>
+
+    </form>
+</div>
+
+{% if upload %}
+
+<div class="rowclass">
+    <div class="colclass">
+        <!-- <div class="imageres"> -->
+        <h2>Uploaded Image</h2>
+        <img class="rounded float-left img-fluid" src="/static/upload/{{upload_image}}" alt="">
+        <!-- </div>
+            <div class="imageres"> -->
+        <h2>Cropped License Plate Image</h2>
+        <img id="licenseplate" src="/static/roi/{{upload_image}}" alt="NumberPlateImage" >
+        <!-- </div> -->
+    </div>
+
+    <div class="colclass">
+
+        <h2>Detected License Plate</h2>
+        <img class="rounded float-right img-fluid" src="/static/predict/{{upload_image}}" alt="">
+        <!-- <div class="textres"> -->
+        <!-- </div>
+        <div class="textres"> -->
+        <h2>License Number Recognition</h2>
+        <span id="OCRtext" >{{text}}</span>
+        <!-- </div> -->
+    </div>
+
+</div>
+{% endif %}
+
+{%endblock%}

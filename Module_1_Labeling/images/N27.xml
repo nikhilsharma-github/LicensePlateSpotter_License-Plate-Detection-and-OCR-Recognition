@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>N27.jpg</filename>
+	<path>P:\Carnumplate\Module_1_Labeling\images\N27.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>291</width>
+		<height>180</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>number_plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>111</xmin>
+			<ymin>81</ymin>
+			<xmax>172</xmax>
+			<ymax>96</ymax>
+		</bndbox>
+	</object>
+</annotation>
